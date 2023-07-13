@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toko Online | Marco Samuel</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!-- Google Fonts Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!-- Fontawesome link -->
+    <script src="https://kit.fontawesome.com/d10ddc8012.js" crossorigin="anonymous"></script>
+    <!-- Crisp Link -->
+    <script type="text/javascript">
+      window.$crisp = [];
+      window.CRISP_WEBSITE_ID = '26f25b42-d7e8-44b4-8fa8-f2b4e17d9e0d';
+      (function () {
+        d = document;
+        s = d.createElement('script');
+        s.src = 'https://client.crisp.chat/l.js';
+        s.async = 1;
+        d.getElementsByTagName('head')[0].appendChild(s);
+      })();
+    </script>
+    <!-- Icon Link -->
+    <link rel="shortcut icon" href="images/Logo_KielShopz_Icon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <div class="header" id="home">
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <img src="images/Logo_KielShopz.jpeg" width="125px" />
+          </div>
+          <nav>
+            <ul id="MenuItems">
+              <li><a href="#home">Beranda</a></li>
+              <li><a href="#products">Produk</a></li>
+              <li><a href="#footer">Kontak</a></li>
+            </ul>
+          </nav>
+          <img src="images/cart.png" width="30px" height="30px" />
+          <img src="images/menu.png" class="menu-icon" onclick="menutoggle()" />
+        </div>
+        <div class="row">
+          <div class="col-2">
+            <h1>Warnai hidup mu<br />dengan makanan kami !</h1>
+            <p>Temui makanan lezat hanya di kielshop.</p>
+            <a href="#products" class="btn">Explore Now &#8594;</a>
+          </div>
+          <div class="col-2">
+            <img src="images/torta_resize.svg" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <h2 class="title" id="products">Produk Terbaru</h2>
+      <div class="row row_800">
+        <div class="col-4">
+          <img src="images/Brownies_2_Resize.jpg" style="border-radius: 7px" />
+          <h4>Brownies Coklat</h4>
+          <p style="margin-bottom: 5px">IDR. 50K</p>
+          <button class="detailkue" onclick="detail_brownies()">Detail Kue</button><br /><br />
+          <button class="pesansekarang" onclick="pesan_sekarang()">Pesan Sekarang !</button>
+        </div>
+        <div class="col-4">
+          <img src="images/Puff Pastery_Real_Resize.jpg" style="border-radius: 7px" />
+          <h4>Strudel Pisang</h4>
+          <p style="margin-bottom: 5px;">IDR. 50K</p>
+          <p style="margin-bottom: 5px"></p>
+          <button class="detailkue" onclick="detail_puffpastery()">Detail Kue</button><br /><br />
+          <button class="pesansekarang" onclick="pesan_sekarang()">Pesan Sekarang !</button>
+        </div>
+        <div class="col-4">
+          <img src="images/Bolu White Coffe_1_Resize.jpg" style="border-radius: 7px" />
+          <h4>Bolu White Coffee</h4>
+          <p style="margin-bottom: 5px">IDR. 40K</p>
+          <button class="detailkue" onclick="detail_boluwhitecoffee()">Detail Kue</button><br /><br />
+          <button class="pesansekarang" onclick="pesan_sekarang()">Pesan Sekarang !</button>
+        </div>
+        <div class="col-4">
+          <img src="images/coffee.jpg" style="border-radius: 7px" />
+          <h4>Kue Sagu</h4>
+          <p style="margin-bottom: 5px">None</p>
+          <button class="detailkue" onclick="detail_kuesagu()" disabled>Detail Kue</button><br /><br />
+          <button class="pesansekarang" onclick="pesan_sekarang()" disabled>Pesan Sekarang !</button>
+        </div>
+      </div>
+      <div class="row row_800">
+        <div class="col-4">
+          <img src="images/coffee.jpg" style="border-radius: 7px" />
+          <h4>Kembang Goyang</h4>
+          <p style="margin-bottom: 5px">None</p>
+          <button class="detailkue" onclick="detail_kembanggoyang()" disabled>Detail Kue</button><br /><br />
+          <button class="pesansekarang" onclick="pesan_sekarang()" disabled>Pesan Sekarang !</button>
+        </div>
+        <div class="col-4">
+          <img src="images/coffee.jpg" style="border-radius: 7px" />
+          <h4>Kue Sagu</h4>
+          <p style="margin-bottom: 5px">None</p>
+          <button class="detailkue" onclick="detail_kuesagu()" disabled>Detail Kue</button><br /><br />
+          <button class="pesansekarang" onclick="pesan_sekarang()" disabled>Pesan Sekarang !</button>
+        </div>
+        <div class="col-4">
+          <img src="images/coffee.jpg" style="border-radius: 7px" />
+          <h4>Nastar</h4>
+          <p style="margin-bottom: 5px">None</p>
+          <button class="detailkue" onclick="detail_nastar()" disabled>Detail Kue</button><br /><br />
+          <button class="pesansekarang" onclick="pesan_sekarang()" disabled>Pesan Sekarang !</button>
+        </div>
+        <div class="col-4">
+          <img src="images/coffee.jpg" style="border-radius: 7px" />
+          <h4>Bolu Donat</h4>
+          <p style="margin-bottom: 5px">None</p>
+          <button class="detailkue" onclick="detail_boludonat()" disabled>Detail Kue</button><br /><br />
+          <button class="pesansekarang" onclick="pesan_sekarang()" disabled>Pesan Sekarang !</button>
+        </div>
+      </div>
+    </div>
+
+    <!-------- footer -------->
+    <div class="footer" id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-2">
+            <img src="images/Logo_KielShopz.jpeg" />
+            <p>Kami dengan senang hati menyediakan kue-kue yang enak untuk pelanggan kami.</p>
+            <p>Whatsapp: 082213556042</p>
+          </div>
+          <!-- <div class="footer-col-3">
+            <h3>Useful Links</h3>
+            <ul>
+              <li>Coupons</li>
+              <li>Blog</li>
+              <li>Return Policy</li>
+              <li>Join Affiliate</li>
+            </ul>
+          </div>
+          <div class="footer-col-4">
+            <h3>Follow us</h3>
+            <ul>
+              <li>Facebook</li>
+              <li>Instagram</li>
+              <li>Twitter</li>
+            </ul>
+          </div> -->
+        </div>
+        <hr />
+        <p class="copyright">Copyright 2023 - Marco Samuel</p>
+      </div>
+    </div>
+    <!-------- js for toggle menu-------->
+    <script type="text/javascript">
+      var MenuItems = document.getElementById('MenuItems');
+
+      MenuItems.style.maxHeight = '0px';
+
+      function menutoggle() {
+        if (MenuItems.style.maxHeight == '0px') {
+          MenuItems.style.maxHeight = '200px';
+        } else {
+          MenuItems.style.maxHeight = '0px';
+        }
+      }
+
+      function pesan_sekarang() {
+        window.location.assign('https://api.whatsapp.com/send?phone=6282213556042&text=Halo%20mau%20order%20gan%0ANama%20Kue%20:%0AJumlah%20:');
+      }
+
+      function detail_brownies() {
+        window.location.assign('viewdetail_browniescoklat.html')
+      }
+
+      function detail_nastar() {
+        window.location.assign('viewdetail_nastar.html');
+      }
+
+      function detail_boludonat() {
+        window.location.assign('viewdetail_boludonat.html');
+      }
+
+      function detail_boluwhitecoffee() {
+        window.location.assign('viewdetail_boluwhitecoffee.html');
+      }
+
+      function detail_kembanggoyang() {
+        window.location.assign('viewdetail_kembanggoyang.html');
+      }
+
+      function detail_kuesagu() {
+        window.location.assign('viewdetail_kuesagu.html');
+      }
+
+      function detail_puffpastery() {
+        window.location.assign('viewdetail_puffpastery.html');
+      }
+    </script>
+  </body>
+</html>

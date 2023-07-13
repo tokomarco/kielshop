@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 1200px;
+}
+
+#carouselExampleControls {
+  width: 65vw;
+  margin-top: 20px;
+}
+
+.product-1,
+.product-2,
+.product-3 {
+  height: 550px;
+}
+
+.product1_img {
+  width: 75vw;
+  height: 70vh;
+  border-radius: 7px;
+  margin-top: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+  .product1_img {
+    width: 85vw;
+    height: 45vh;
+  }
+}
